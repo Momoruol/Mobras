@@ -74,12 +74,10 @@ header nav ul li {
 }
 .navbar .mobile-menu-toggle {
 	cursor: pointer;
+	display: none;
 }
 .navbar .mobile-menu-items.active {
 	transform: translateX(0);
-}
-.navbar .mobile-menu {
-	display: none;
 }
 
 /* Media Queries */
@@ -99,7 +97,7 @@ header nav ul li {
 	header .navbar .menu-mobile i {
 		margin-right: 1rem;
 	}
-	.navbar .mobile-menu {
+	.navbar .mobile-menu-toggle {
 		display: block;
 	}
 }
