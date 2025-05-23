@@ -1,114 +1,12 @@
-/* Basicos */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
 :root {
-	--primary-color: #044c7499;
-}
-body {
-	font-family: 'Roboto', sans-serif;
-	overflow-x: hidden;
-}
-
-a {
-	text-decoration: none;
-	color: #000;
-}
-
-li {
-	list-style: none;
-}
-
-/* Utility */
-.container {
-	max-width: 1100px;
-	margin: 0px auto;
-	padding: 0 2rem;
-}
-.flex {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-/* Navbar */
-header .flex {
-	justify-content: space-between;
-}
-.navbar {
-	height: 80px;
-}
-header .navbar .flex {
-	gap: 4rem;
-}
-header nav ul li {
-	font-size: 20px;
-	font-weight: 600;
-}
-.navbar a:hover {
-	color: var(--primary-color);
-}
-.navbar .mobile-menu-items {
-	position: absolute;
-	top: 100px;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	background-color: rgb(255, 255, 255, 0.5);
-	text-align: center;
-	transition: transform 0.3s ease;
-	transform: translateX(100%);
-}
-.navbar .mobile-menu-list {
-	display: flex;
-	flex-direction: column;
-	padding-top: 250px;
-	height: 100%;
-	gap: 2rem;
-}
-.navbar .mobile-menu-list a {
-	font-size: 1.2rem;
-}
-.navbar .mobile-menu-toggle {
-	cursor: pointer;
-	display: none;
-}
-.navbar .mobile-menu-items.active {
-	transform: translateX(0);
-}
-
-/* Media Queries */
-@media (max-width: 1024px) {
-	header nav ul li {
-		font-size: 16px;
-	}
-}
-
-@media (max-width: 768px) {
-	header .navbar .nav {
-		display: none;
-	}
-	header .logo img {
-		margin-top: 1rem;
-	}
-	header .navbar .menu-mobile i {
-		margin-right: 1rem;
-	}
-	.navbar .mobile-menu-toggle {
-		display: block;
-	}
-}
-@media (max-width: 425px) {
-	header .logo img {
-		margin-top: 0;
-	}
-	header .navbar .menu-mobile i {
-		margin-right: 0;
-	}
-	header .container {
-		padding: 0 4px;
-	}
+	--indigo-dye: #274060ff;
+	--lapis-lazuli: #335c81ff;
+	--argentinian-blue: #65afffff;
+	--space-cadet: #1b2845ff;
+	--united-nations-blue: #5899e2ff;
 }
