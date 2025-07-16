@@ -56,8 +56,8 @@
 				</div>
 			</nav>
 			<!-- Hero Section -->
-			<section id="hero-section" class="py-64">
-				<div class="container mx-auto space-y-12">
+			<section id="hero-section" class="md:py-64 py-32">
+				<div class="container mx-auto space-y-12 max-w-2xl">
 					<div class="flex flex-col space-y-12">
 						<h1
 							class="capitalize text-center text-5xl px-8 text-gray-200 font-bold"
@@ -72,7 +72,7 @@
 						</p>
 					</div>
 					<div
-						class="group flex items-center justify-center space-x-12"
+						class="group flex flex-col md:flex-row items-center justify-center space-y-6 md:space-y-0 md:space-x-12"
 					>
 						<button href="#" class="btn btn-xl rounded-full">
 							Saiba Mais
@@ -84,5 +84,51 @@
 				</div>
 			</section>
 		</div>
+
+		<!-- Section valores MoBrás -->
+		<section id="valores" class="bg-gray-100 section">
+			<!-- container valores -->
+			<div class="section-container space-y-16">
+				<h2 class="text-center text-5xl font-semibold">
+					Os Valores MoBrás
+				</h2>
+				<div class="divider px-42"></div>
+				<p class="text-lg text-justify md:text-3xl">
+					Comprometidos com a excelência em cada etapa do processo,
+					nossa empresa atua como uma parceira estratégica para
+					clientes ao redor do mundo. Mais do que fornecer mobiliário
+					de alto padrão, trabalhamos com foco nos objetivos de nossos
+					clientes, contribuindo para o crescimento e sucesso de seus
+					negócios no mercado global. Fornecemos um serviço completo,
+					desde a fabricação do móvel, até sua devida expedição.
+				</p>
+			</div>
+		</section>
+
+		<!-- Section Service Cards -->
+		<section id="service-cards" class="section bg-gray-100">
+			<!-- container -->
+			<div class=".section-container">
+				<!--Card flex-container  -->
+				<div class="flex flex-col md:flex-row p-10">
+					<img
+						src="./images/Mundo.jpg"
+						alt=""
+						class="max-w-full rounded-t-4xl md:max-w-2/4 md:rounded-l-4xl md:rounded-t-none lg:max-w-1/4"
+					/>
+					<div
+						class="flex flex-col justify-center items-center space-y-6 text-center py-20 px-6 text-white bg-[#274060] rounded-b-4xl md:items-start md:rounded-b-none md:rounded-tr-4xl md:rounded-br-4xl"
+					>
+						<h2 class="text-3xl font-semibold">Alcance Global</h2>
+						<p class="text-xl text-justify">
+							Atendemos clientes em todo o mundo com estratégias
+							logísticas bem definidas e proteção reforçada nos
+							produtos, assegurando qualidade e segurança desde a
+							origem até a entrega final.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
 	</body>
 </html>

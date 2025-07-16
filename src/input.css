@@ -15,3 +15,11 @@
 			url(../images/Hero-desktop.jpg);
 	}
 }
+
+.section-container {
+	@apply container mx-auto max-w-6xl p-6;
+}
+
+.section {
+	@apply md:pt-64 pt-32;
+}
