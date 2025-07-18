@@ -17,7 +17,7 @@
 }
 
 .section-container {
-	@apply container mx-auto max-w-6xl p-6;
+	@apply container mx-auto p-6;
 }
 
 .section {
