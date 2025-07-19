@@ -22,38 +22,62 @@
 						alt="Logo Mobrás"
 						class="navbar-start w-64 saturate-200 brightness-200"
 					/>
-					<div
-						class="hidden navbar-end align-items-center justify-center text-white lg:text-xl md:space-x-4 md:flex lg:space-x-8 xl:space-x-16"
-					>
-						<a href="#">Início</a>
-						<a href="#">Qualidade</a>
-						<a href="#">Produtos</a>
-						<a href="#">Exportação</a>
-						<a href="#">Contato</a>
-					</div>
-
-					<div
-						tabindex="0"
-						role="button"
-						class="btn btn-ghost btn-circle btn-xl md:hidden"
-					>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							class="h-8 w-8"
-							fill="none"
-							viewBox="0 0 24 24"
-							stroke="#fff"
+					<div class="flex justify-center items-center">
+						<div
+							class="hidden navbar-end align-items-center justify-center text-white lg:text-xl md:space-x-4 md:flex lg:space-x-8 xl:space-x-16"
 						>
-							<path
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								stroke-width="2"
-								d="M4 6h16M4 12h16M4 18h7"
+							<a href="#">Início</a>
+							<a href="#">Qualidade</a>
+							<a href="#">Produtos</a>
+							<a href="#">Exportação</a>
+							<a href="#">Contato</a>
+						</div>
+						<div class="drawer drawer-end">
+							<input
+								id="my-drawer-4"
+								type="checkbox"
+								class="drawer-toggle"
 							/>
-						</svg>
+							<div class="drawer-content">
+								<!-- Page content here -->
+								<label for="my-drawer-4" class="drawer-button"
+									><svg
+										xmlns="http://www.w3.org/2000/svg"
+										class="h-8 w-8"
+										fill="none"
+										viewBox="0 0 24 24"
+										stroke="#fff"
+									>
+										<path
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											stroke-width="2"
+											d="M4 6h16M4 12h16M4 18h7"
+										/>
+									</svg>
+								</label>
+							</div>
+							<div class="drawer-side">
+								<label
+									for="my-drawer-4"
+									aria-label="close sidebar"
+									class="drawer-overlay"
+								></label>
+								<ul
+									class="menu bg-base-200 text-base-content min-h-full w-80 p-4 pt-20 space-y-4"
+								>
+									<!-- Sidebar content here -->
+									<li><a href="#">Início</a></li>
+									<li><a href="#">Qualidade</a></li>
+									<li><a href="#">Produtos</a></li>
+									<li><a href="#">Exportação</a></li>
+									<li><a href="#">Contato</a></li>
+								</ul>
+							</div>
+						</div>
 					</div>
-					<!-- @todo Mobile Menu -->
 				</div>
+				<!-- Mobile Menu -->
 			</nav>
 			<!-- Hero Section -->
 			<section id="hero-section" class="md:py-64 py-32">
@@ -93,7 +117,7 @@
 					Os Valores MoBrás
 				</h2>
 				<div class="divider px-42"></div>
-				<p class="text-lg text-justify md:text-3xl">
+				<p class="text-lg text-justify md:text-3xl md:px-24">
 					Comprometidos com a excelência em cada etapa do processo,
 					nossa empresa atua como uma parceira estratégica para
 					clientes ao redor do mundo. Mais do que fornecer mobiliário
@@ -187,7 +211,9 @@
 			</div>
 			<!-- Flex container -->
 			<div class="section-container">
-				<div class="grid justify-center md:grid-cols-2 gap-8">
+				<div
+					class="flex flex-col justify-center items-center space-y-12 md:flex-row md:flex-wrap md:space-x-20"
+				>
 					<div class="card bg-base-100 w-96 shadow-lg">
 						<figure>
 							<img
@@ -231,6 +257,74 @@
 								de modulados oferece possibilidades infinitas em
 								seu ambiente.
 							</p>
+						</div>
+					</div>
+					<div class="card bg-base-100 w-96 shadow-lg">
+						<figure>
+							<img
+								src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+								alt="Shoes"
+							/>
+						</figure>
+						<div class="card-body">
+							<h2 class="card-title">Linha Classic</h2>
+							<p>
+								A linha completamente personalizavel, esta linha
+								de modulados oferece possibilidades infinitas em
+								seu ambiente.
+							</p>
+						</div>
+					</div>
+					<div class="card bg-base-100 w-96 shadow-lg">
+						<figure>
+							<img
+								src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+								alt="Shoes"
+							/>
+						</figure>
+						<div class="card-body">
+							<h2 class="card-title">Linha Standart</h2>
+							<p>
+								A linha completamente personalizavel, esta linha
+								de modulados oferece possibilidades infinitas em
+								seu ambiente.
+							</p>
+						</div>
+					</div>
+					<div class="card bg-base-100 w-96 shadow-lg">
+						<figure>
+							<img
+								src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+								alt="Shoes"
+							/>
+						</figure>
+						<div class="card-body">
+							<h2 class="card-title">Linha Infantil</h2>
+							<p>
+								A linha completamente personalizavel, esta linha
+								de modulados oferece possibilidades infinitas em
+								seu ambiente.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="testimonials" class="section bg-gray-100">
+			<div class="section-container">
+				<h2 class="text-center text-5xl font-semibold">
+					Quem compra MoBrás fala Bem!
+				</h2>
+				<div class="divider px-42"></div>
+				<div
+					class="flex flex-col justify-center items-center space-y-12 md:flex-row md:flex-wrap md:space-x-20"
+				>
+					<div class="card bg-base-100 w-96 shadow-sm">
+						<div class="card-body">
+							<h2 class="card-title text-2xl">
+								Nome e sobrenome de pessoa
+							</h2>
+							<p>Comentario elogiando a empresa e seus móveis</p>
 						</div>
 					</div>
 				</div>
