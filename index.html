@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Mobrás Móveis do Brasil | Exportando Móveis para o Mundo</title>
 		<link rel="stylesheet" href="./src/output.css" />
+		<script src="script.js" defer></script>
 	</head>
 	<body>
 		<div
@@ -22,15 +23,49 @@
 						alt="Logo Mobrás"
 						class="navbar-start w-64 saturate-200 brightness-200"
 					/>
-					<div class="flex justify-center items-center">
+					<div class="relative flex justify-center items-center">
 						<div
 							class="hidden navbar-end align-items-center justify-center text-white lg:text-xl md:space-x-4 md:flex lg:space-x-8 xl:space-x-16"
 						>
-							<a href="#">Início</a>
-							<a href="#">Qualidade</a>
-							<a href="#">Produtos</a>
-							<a href="#">Exportação</a>
-							<a href="#">Contato</a>
+							<a href="#" class="hover:text-blue-400">Início</a>
+							<a href="#" class="hover:text-blue-400"
+								>Qualidade</a
+							>
+							<a href="#" class="hover:text-blue-400">Produtos</a>
+							<div id="dropdown-click">
+								<div class="cursor-pointer hover:text-blue-400">
+									Exportação
+								</div>
+								<div
+									id="dropdown-nav"
+									class="absolute hidden text-black bg-gradient p-6 mt-1 rounded-4xl"
+								>
+									<ul class="space-y-4">
+										<li>
+											<a
+												href="#"
+												class="font-bold hover:text-blue-500"
+												>Logística</a
+											>
+										</li>
+										<li>
+											<a
+												href="#"
+												class="font-bold hover:text-blue-500"
+												>Países</a
+											>
+										</li>
+										<li>
+											<a
+												href="#"
+												class="font-bold hover:text-blue-500"
+												>Como Trabalhamos</a
+											>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<a href="#" class="hover:text-blue-400">Contato</a>
 						</div>
 						<div class="drawer drawer-end">
 							<input
@@ -80,7 +115,7 @@
 			</nav>
 			<!-- Hero Section -->
 			<section id="hero-section" class="md:py-64 py-32">
-				<div class="container mx-auto space-y-12 max-w-2xl">
+				<div id="hero" class="container mx-auto space-y-12 max-w-2xl">
 					<div class="flex flex-col space-y-12">
 						<h1
 							class="capitalize text-center text-5xl px-8 text-gray-200 font-bold"
