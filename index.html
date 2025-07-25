@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Mobrás Móveis do Brasil | Exportando Móveis para o Mundo</title>
 		<link rel="stylesheet" href="./src/output.css" />
+
 		<script src="script.js" defer></script>
 	</head>
 	<body>
@@ -12,7 +13,7 @@
 			class="relative min-h-screen bg-center bg-cover bg-no-repeat bg-container"
 		>
 			<!-- Nav -->
-			<nav class="navbar">
+			<nav class="navbar fixed transition-all duration-150">
 				<!-- nav-container -->
 				<div
 					class="container mx-auto flex justify-between items-center py-2"
@@ -27,8 +28,10 @@
 						<div
 							class="hidden navbar-end align-items-center justify-center text-white lg:text-xl md:space-x-4 md:flex lg:space-x-8 xl:space-x-16"
 						>
-							<a href="#" class="hover:text-blue-400">Início</a>
-							<a href="#" class="hover:text-blue-400"
+							<a href="index.html" class="hover:text-blue-400"
+								>Início</a
+							>
+							<a href="qualidade.html" class="hover:text-blue-400"
 								>Qualidade</a
 							>
 							<a href="#" class="hover:text-blue-400">Produtos</a>
@@ -38,27 +41,27 @@
 								</div>
 								<div
 									id="dropdown-nav"
-									class="absolute hidden text-black bg-gradient p-6 mt-1 rounded-4xl"
+									class="absolute hidden text-black p-6 mt-2 rounded-4xl transition-all duration-200"
 								>
 									<ul class="space-y-4">
 										<li>
 											<a
 												href="#"
-												class="font-bold hover:text-blue-500"
+												class="font-semibold hover:text-blue-500"
 												>Logística</a
 											>
 										</li>
 										<li>
 											<a
 												href="#"
-												class="font-bold hover:text-blue-500"
+												class="font-semibold hover:text-blue-500"
 												>Países</a
 											>
 										</li>
 										<li>
 											<a
 												href="#"
-												class="font-bold hover:text-blue-500"
+												class="font-semibold hover:text-blue-500"
 												>Como Trabalhamos</a
 											>
 										</li>
@@ -115,7 +118,10 @@
 			</nav>
 			<!-- Hero Section -->
 			<section id="hero-section" class="md:py-64 py-32">
-				<div id="hero" class="container mx-auto space-y-12 max-w-2xl">
+				<div
+					id="hero"
+					class="container mx-auto space-y-12 max-w-2xl mt-20"
+				>
 					<div class="flex flex-col space-y-12">
 						<h1
 							class="capitalize text-center text-5xl px-8 text-gray-200 font-bold"
@@ -396,7 +402,7 @@
 						</p>
 						<div class="card-actions justify-end">
 							<button class="btn btn-soft lg:btn-lg">
-								Veja nossos clientes no Chile!
+								Veja nossos produtos no Chile!
 							</button>
 						</div>
 					</div>
@@ -426,7 +432,7 @@
 						</p>
 						<div class="card-actions justify-end lg:justify-start">
 							<button class="btn btn-soft lg:btn-lg">
-								Veja nossos clientes no Paraguai!
+								Veja nossos produtos no Paraguai!
 							</button>
 						</div>
 					</div>
@@ -457,7 +463,7 @@
 						</p>
 						<div class="card-actions justify-end">
 							<button class="btn btn-soft lg:btn-lg">
-								Veja nossos clientes no Uruguai!
+								Veja nossos Produtos no Uruguai!
 							</button>
 						</div>
 					</div>

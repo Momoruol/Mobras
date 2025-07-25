@@ -25,14 +25,12 @@
 }
 
 .scrolled {
-	transition: 0.6s;
-	background: linear-gradient(rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.67));
+	background-color: rgba(0, 0, 0, 0.67);
 	z-index: 1000;
 }
 
-.bg-gradient {
-	background: linear-gradient(
-		rgba(255, 255, 255, 0.67),
-		rgba(255, 255, 255, 0.67)
-	);
+.flex-drop {
+	display: flex;
+	background-color: rgba(255, 255, 255, 0.87);
+	z-index: 1000;
 }

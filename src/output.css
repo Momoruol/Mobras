@@ -7,14 +7,11 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-blue-300: oklch(80.9% 0.105 251.813);
     --color-blue-400: oklch(70.7% 0.165 254.624);
     --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-gray-50: oklch(98.5% 0.002 247.839);
     --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-gray-200: oklch(92.8% 0.006 264.531);
-    --color-gray-400: oklch(70.7% 0.022 261.325);
-    --color-gray-900: oklch(21% 0.034 264.665);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -31,7 +28,6 @@
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --radius-4xl: 2rem;
-    --ease-out: cubic-bezier(0, 0, 0.2, 1);
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
@@ -783,8 +779,8 @@
   .mx-auto {
     margin-inline: auto;
   }
-  .mt-1 {
-    margin-top: calc(var(--spacing) * 1);
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
   }
   .mt-20 {
     margin-top: calc(var(--spacing) * 20);
@@ -1118,9 +1114,13 @@
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
-  .duration-1000 {
-    --tw-duration: 1000ms;
-    transition-duration: 1000ms;
+  .duration-150 {
+    --tw-duration: 150ms;
+    transition-duration: 150ms;
+  }
+  .duration-200 {
+    --tw-duration: 200ms;
+    transition-duration: 200ms;
   }
   .btn-soft {
     &:not(.btn-active, :hover, :active:focus, :focus-visible, :disabled, [disabled], .btn-disabled) {
@@ -1423,12 +1423,13 @@
   }
 }
 .scrolled {
-  transition: 0.6s;
-  background: linear-gradient(rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.67));
+  background-color: rgba(0, 0, 0, 0.67);
   z-index: 1000;
 }
-.bg-gradient {
-  background: linear-gradient(	rgba(255, 255, 255, 0.67),	rgba(255, 255, 255, 0.67)	);
+.flex-drop {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.87);
+  z-index: 1000;
 }
 @layer base {
   :where(:root),:root:has(input.theme-controller[value=corporate]:checked),[data-theme=corporate] {
