@@ -9,6 +9,7 @@
 		<script src="script.js" defer></script>
 	</head>
 	<body>
+		<!-- Navbar -->
 		<nav class="navbar fixed transition-all duration-150">
 			<!-- nav-container -->
 			<div
@@ -39,7 +40,7 @@
 							</div>
 							<div
 								id="dropdown-nav"
-								class="absolute hidden text-black p-6 mt-2 rounded-4xl transition-all duration-200"
+								class="z-50 absolute hidden text-black p-6 mt-2 rounded-4xl transition-all duration-200"
 							>
 								<ul class="space-y-4">
 									<li>
@@ -118,8 +119,45 @@
 				</div>
 			</div>
 		</nav>
+		<!-- Contato -->
+		<section id="contato" class="section bg-gray-200">
+			<!-- container -->
+			<div class="section-container">
+				<div class="flex flex-col space-y-20">
+					<h2 class="mx-auto text-6xl font-bold">Contato.</h2>
+					<form
+						action="submit"
+						class="grid md:grid-cols-2 space-y-4 place-items-center md:place-items-start"
+					>
+						<div class="grid gap-2 w-full place-items-center">
+							<input
+								type="name"
+								placeholder="Nome"
+								class="input static"
+							/>
+							<input
+								type="email"
+								placeholder="Email"
+								class="input static"
+							/>
+							<input
+								type="text"
+								placeholder="Telefone"
+								class="input static"
+							/>
+						</div>
+
+						<textarea
+							class="textarea h-11/12"
+							placeholder="Mensagem"
+						></textarea>
+					</form>
+				</div>
+			</div>
+		</section>
+		<!-- Footer -->
 		<footer
-			class="footer sm:footer-horizontal bg-base-200 text-base-content p-10"
+			class="footer sm:footer-horizontal bg-base-200 text-base-content p-10 md:place-items-center"
 		>
 			<aside>
 				<img src="images/Mobras.png" alt="" class="block w-40" />
